@@ -4,15 +4,15 @@ import "./Feed.css"
 
 const firstTweet = {
   id: -1,
-  name: `Code Path`,
-  handle: `codepath`,
-  text: `This is a tweet about something that excites us greatly. We're going to proclaim our joy on social media and be showered with praise.`,
-  comments: 445,
-  retweets: 121,
+  name: `Abbey`,
+  handle: `Abbey311`,
+  text: `I am bored.`,
+  comments: 145,
+  retweets: 221,
   likes: 165000,
 }
 
-export default function Feed() {
+export default function Feed({tweets, addTweet}) {
   return (
     <div className="col feed">
       <TweetInput />
@@ -26,7 +26,7 @@ export default function Feed() {
       <div className="twitter-feed">
         {/* example first tweet */}
         <Tweet tweet={firstTweet} />
-        {/* */}
+        {}
       </div>
     </div>
   )

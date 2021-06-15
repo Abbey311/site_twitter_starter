@@ -6,10 +6,10 @@ import Advertisements from "../Advertisements/Advertisements"
 import "./App.css"
 
 const defaultUserProfile = {
-  name: "Code Path",
-  handle: "codepath",
+  name: "Abbey",
+  handle: "Abbey311",
   numTweets: "1.2k",
-  numFollowers: "2.5m",
+  numFollowers: "8.4m",
 }
 export default function App({ userProfile = defaultUserProfile }) {
   const [tweets, setTweets] = useState([])
@@ -25,7 +25,7 @@ export default function App({ userProfile = defaultUserProfile }) {
     <div className="app">
       <Navbar />
       <main className="main">
-        <UserProfile />
+        <UserProfile userProfile={defaultUserProfile}/>
         <Feed />
         <Advertisements />
       </main>
